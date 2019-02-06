@@ -38,7 +38,7 @@ def CIFAR10(data_path):
 
 def CIFAR10_data(num_training=49000, num_validation=1000, num_test=1000):
     # Load the raw CIFAR-10 data
-    cifar10_dir = "data/cifar-10-batches-py"
+    cifar10_dir = os.path.join("data", "cifar-10-batches-py")
     data_train, labels_train, data_test, labels_test = CIFAR10(cifar10_dir)
         
     # Subsample the data
@@ -70,7 +70,7 @@ def CIFAR10_data(num_training=49000, num_validation=1000, num_test=1000):
 
 def CIFAR10_tf(num_training=49000, num_validation=1000, num_test=1000):
     # Load the raw CIFAR-10 data
-    cifar10_dir = "data/cifar-10-batches-py"
+    cifar10_dir = os.path.join("data", "cifar-10-batches-py")
     data_train, labels_train, data_test, labels_test = CIFAR10(cifar10_dir)
         
     # Subsample the data
