@@ -1,0 +1,11 @@
+*.pyc
+data/cifar*
+data/MNIST*
+*.png
+*.npy
+*.gz
+MNIST_data
+*.zip
+*.swp
+.*checkpoints
+lib/tf_models/problem2
